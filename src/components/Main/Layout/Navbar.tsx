@@ -13,14 +13,14 @@ function Navbar() {
   return (
     <nav className="flex justify-between items-center py-8 px-16 text-[15px]">
       <div>
-        <Link href="lifemitra-home">
+        <Link href="/lifemitra-home">
           <Image alt="Logo" src={Logo} className="w-12 h-12" />
         </Link>
       </div>
       <div className="flex items-center space-x-8">
         <Link
           className={currentRoute === "/lifemitra-home" ? activeStyle : nonActiveStyle}
-          href="home"
+          href="lifemitra-home"
         >
           Home
         </Link>
@@ -34,7 +34,7 @@ function Navbar() {
           className={
             currentRoute === "/services" ? activeStyle : nonActiveStyle
           }
-          href="#"
+          href="services"
         >
           Services
         </Link>
@@ -42,7 +42,7 @@ function Navbar() {
           className={
             currentRoute === "/help-desk" ? activeStyle : nonActiveStyle
           }
-          href="#"
+          href="help-desk"
         >
           Help Desk
         </Link>
@@ -50,7 +50,7 @@ function Navbar() {
           className={
             currentRoute === "/contactus" ? activeStyle : nonActiveStyle
           }
-          href="#"
+          href="contactus"
         >
           Contact us
         </Link>

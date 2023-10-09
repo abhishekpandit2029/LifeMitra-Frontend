@@ -10,8 +10,8 @@ const oppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "NextGen",
-  description: "Home page of NextGen",
+  title: "Lifemitra",
+  description: "Home page of Lifemitra",
 };
 
 export default function RootLayout({
