@@ -1,24 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import sm from "@/stuff/sm1 (3).svg";
+import DoctorsIllustration from "@/stuff/Doctors-bro.svg";
 
 export default function Home() {
   return (
     <div className="px-16 flex justify-between items-center">
-      <div>
-        <div className="font-[900]">
-          <p className="text-[3rem] text-black">
+      <div className="w-3/5">
+        <div className="font-[700] leading-[5.5rem]">
+          <p className="text-[3.5rem]">
             Welcome to{" "}
-            <span className="text-[4rem] text-teal-700">LifeMitra</span>{" "}
+            <span className="text-[4rem] .5text-teal-700">LifeMitra</span>{" "}
           </p>
-          <p className="text-[3rem]">
-            <span className="text-[4rem] text-teal-700">
+          <p className="text-[3.5rem]">
+            <span className="text-[4.5rem] text-teal-700">
               Mitrata
             </span> karo
           </p>
-          <p className="text-[3rem]">
+          <p className="text-[3.5rem]">
             apne
-            <span className="text-[4rem] text-teal-700"> Jivan
+            <span className="text-[4.5rem] text-teal-700"> Jivan
             </span> se
           </p>
         </div>
@@ -27,8 +27,8 @@ export default function Home() {
           customers and algorithms love.
         </p>
       </div>
-      <div>
-        <Image src={sm} alt="Logo" />
+      <div className="w-2/5">
+        <Image src={DoctorsIllustration} alt="Logo" sizes="large" />
       </div>
     </div>
   );

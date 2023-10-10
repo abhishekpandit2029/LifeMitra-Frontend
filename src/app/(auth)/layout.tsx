@@ -1,9 +1,8 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Dashboardlayout from "@/components/Main/Layout/Dashboardlayout";
 import Image from "next/image";
-import sm from "@/stuff/sm1 (4).svg";
+import Doctorscuate from "@/stuff/Doctors-cuate.svg";
 
 const oppins = Poppins({
   subsets: ["latin"],
@@ -22,15 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={oppins.className}>
-      <Dashboardlayout>
-        <div className="px-16 pb-8 flex items-center justify-evenly">
-          <div>
-            <Image src={sm} className="min-w-full" alt="Logo" />
-          </div>
-          {children}
-        </div>
-      </Dashboardlayout>
+    <div className={`${oppins.className} px-16 pb-8 flex items-center justify-evenly`}>
+      <div>
+        <Image src={Doctorscuate} className="min-w-full" alt="Logo" />
+      </div>
+      {children}
     </div>
   );
 }
